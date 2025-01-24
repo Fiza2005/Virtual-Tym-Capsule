@@ -7,9 +7,14 @@
   
   body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    color: #343a40;
+    background-color: #080808;
+    color: #000000;
     line-height: 1.6;
+    align-items: center;
+  
+    
+    
+    
   }
   
   /* Navbar Styles */
@@ -53,12 +58,12 @@
   
   .hero-section h1 {
     font-size: 2.5rem;
-    color: #343a40;
+    color: #212325;
   }
   
   .hero-section p {
     font-size: 1.2rem;
-    color: #6c757d;
+    color: #171818;
   }
   
   /* Form Container */
@@ -83,7 +88,7 @@
   .form-container button, .signup-box button, .login-box button {
     width: 100%;
     padding: 10px;
-    background-color:#052241;
+    background-color:#d8dbdd;
     color: white;
     border: none;
     border-radius: 5px;
@@ -99,7 +104,7 @@
   }
   
   p a {
-    color: #052241;
+    color: #292929;
   }
   
   p a:hover {
@@ -145,6 +150,56 @@
   .about-section {
     text-align: center;
     margin: 30px auto;        /* Centers the section horizontally */
-    width: 60%;               /* Controls the width of the content */
+    width: 60%;  
+    color: #d8dbdd;             /* Controls the width of the content */
   }
-  
+  /* Carousel container */
+.carousel {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+  overflow: hidden;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+
+/* Images container */
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Each image */
+.carousel-images img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+/* Navigation buttons */
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 18px;
+  z-index: 1;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
